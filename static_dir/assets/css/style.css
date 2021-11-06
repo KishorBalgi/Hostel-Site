@@ -146,8 +146,26 @@ p {
 }
 
 .paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
+    padding: 9% 9% 9% 9%;
+}
+
+.FitMyVideo-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+    border: 20px outset rgba( 255, 255, 255, 0.25 );
+}
+
+.FitMyVideo-container iframe,	
+.FitMyVideo-container object,	
+.FitMyVideo-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .paddsections {
@@ -176,13 +194,16 @@ p {
 --------------------------------------------------------------*/
 
 nav {
-  position: fixed;
-  background: #fff;
-  z-index: 1000;
-  width: 100%;
-  padding: 8px;
-  display: none;
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 8px;
+    display: none;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .nav-menu {
@@ -201,17 +222,17 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 14px;
-  color: #1e1e42;
-  font-family: "Poppins", helvetica;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+    padding: 2px 0 0 0;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #ffff;
+    font-family: 'Poppins', helvetica;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .logo {
@@ -236,9 +257,9 @@ nav ul li a {
 --------------------------------------------------------------*/
 
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
-  height: 100vh;
-  width: 100%;
+    background: url("../img/image.jpg") repeat scroll center center/cover;
+    height: 100vh;
+    width: 100%;
 }
 
 #hero .hero-content {
@@ -250,10 +271,22 @@ nav ul li a {
   flex-direction: column;
 }
 
+.tvm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.tvm img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
 .hero-content h1 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: -25% 5% 5% 5%;
   text-transform: uppercase;
   color: #fff;
 }
@@ -261,8 +294,7 @@ nav ul li a {
 .hero-content p {
   font-size: 13px;
   letter-spacing: 3px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: -4% 5% 5% 5%;
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
@@ -344,15 +376,22 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #about {
-  width: 100%;
-  height: auto;
-  background: #f4f9f9;
-  padding-top: 120px;
+    width: 100%;
+    height: auto;
+    background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover;
+    padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
   border: 20px solid #1e1e42;
+}
+
+.titleholder{
+padding-bottom: 5%;
+color: white;
+text-shadow: 2px 2px black;
+text-align: center;
 }
 
 #about .div-img-bg .about-img img {
@@ -1466,7 +1505,7 @@ nav ul li a {
 }
 
 @media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
-  }
+    .testimonials {
+        margin: 30px 10px;
+    }
 }
