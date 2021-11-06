@@ -4,7 +4,7 @@ from .models import Wishes
 class WishesForm(forms.ModelForm):
     content = forms.CharField(widget=forms.Textarea(attrs={
         'rows': 14,
-        'minlength': 170,
+        'minlength': 50,
         'title': "Your Message",
         'label': 'Your Message'
 
