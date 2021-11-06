@@ -1,22 +1,19 @@
    {% load static %}
-   
-    <!-- ======= Navbar ======= -->
+<!-- ======= Navbar ======= -->
     <nav id="main-nav">
         <div class="row">
             <div class="container">
-
                 <div class="logo">
                     <a href="{% url 'home' %}"><img src="{% static 'assets/img//logo.png' %}" alt="logo"></a>
-                </div>
-
-                <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
+            </div>
+            <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
                 <ul class="nav-menu list-unstyled">
                     <li><a href="{% url 'home' %}" class="smoothScroll">Home</a></li>
-                    <li><a href="{% url 'wishes' %}" >wishes</a></li>
+                    <li><a href="{% url 'wishes' %}" >Wishes</a></li>
                     <li><a href="{% url 'gallery' %}" class="smoothScroll">Gallery</a></li>
+                    <li><a href="{% url 'home' %}" class="smoothScroll">Brochure</a></li>
                 </ul>
-
             </div>
         </div>
-    </nav><!-- End Navbar -->
+    </nav>
+<!-- End Navbar -->
