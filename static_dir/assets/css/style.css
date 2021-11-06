@@ -146,26 +146,26 @@ p {
 }
 
 .paddsection {
-    padding: 9% 9% 9% 9%;
+  padding: 9% 9% 9% 9%;
 }
 
 .FitMyVideo-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-    border: 20px outset rgba( 255, 255, 255, 0.25 );
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: 20px outset rgba(255, 255, 255, 0.25);
 }
 
-.FitMyVideo-container iframe,	
-.FitMyVideo-container object,	
+.FitMyVideo-container iframe,
+.FitMyVideo-container object,
 .FitMyVideo-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .paddsections {
@@ -194,16 +194,16 @@ p {
 --------------------------------------------------------------*/
 
 nav {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    padding: 8px;
-    display: none;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 8px;
+  display: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .nav-menu {
@@ -222,17 +222,17 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 2px 0 0 0;
-    position: relative;
-    display: block;
-    font-size: 14px;
-    color: #ffff;
-    font-family: 'Poppins', helvetica;
-    font-weight: 500;
-    line-height: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+  padding: 2px 0 0 0;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #ffff;
+  font-family: "Poppins", helvetica;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .logo {
@@ -257,9 +257,9 @@ nav ul li a {
 --------------------------------------------------------------*/
 
 #hero {
-    background: url("../img/image.jpg") repeat scroll center center/cover;
-    height: 100vh;
-    width: 100%;
+  background: url("../img/image.jpg") repeat scroll center center/cover;
+  height: 100vh;
+  width: 100%;
 }
 
 #hero .hero-content {
@@ -275,12 +275,12 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 .tvm img {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
 }
 
 .hero-content h1 {
@@ -376,10 +376,10 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #about {
-    width: 100%;
-    height: auto;
-    background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover;
-    padding-top: 120px;
+  width: 100%;
+  height: auto;
+  background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover;
+  padding-top: 120px;
 }
 
 #about .div-img-bg {
@@ -387,11 +387,11 @@ nav ul li a {
   border: 20px solid #1e1e42;
 }
 
-.titleholder{
-padding-bottom: 5%;
-color: white;
-text-shadow: 2px 2px black;
-text-align: center;
+.titleholder {
+  padding-bottom: 5%;
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
 #about .div-img-bg .about-img img {
@@ -938,13 +938,23 @@ text-align: center;
 }
 
 /* Commonts form */
-
-.cmt {
-  background: #fff;
+.cmt label {
+  color: #fff;
 }
+.modal-title {
+  color: #f2f2f2;
+}
+.close {
+  color: #fff;
+  text-shadow: none;
+}
+.overlay {
+  backdrop-filter: blur(20px);
+}
+/* Glassmorphism */
 .glass {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.5);
+  box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -969,11 +979,20 @@ text-align: center;
   align-self: flex-end;
   color: #f2f2f2;
 }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
+@media only screen and (max-width: 800px) {
+  .main-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .block-main {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .container-main .block-main .content-main {
+    width: 90vw;
+  }
+}
+/*-------------------------------------------------------------- # Footer --------------------------------------------------------------*/
 #footer {
   background: #1e1e42;
   padding-top: 50px;
@@ -1436,94 +1455,4 @@ text-align: center;
 
 ::-webkit-scrollbar {
   width: 10px;
-}
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid #fff;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: #444444;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #444444;
-  margin: 0 0 0 45px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #444444;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: white;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonials .owl-nav,
-.testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #1e1e42 !important;
-}
-
-.testimonials {
-  background-color: #f4f9f9;
-}
-
-@media (max-width: 767px) {
-    .testimonials {
-        margin: 30px 10px;
-    }
 }
