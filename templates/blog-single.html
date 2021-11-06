@@ -63,8 +63,8 @@
                     {{ form | crispy}}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-defeault" data-dismiss="modal">Close</button>
-        <input type="submit" value="Post the Message" class="btn btn-defeault btn-send">
+        <button type="button" class="btn btn-defeault rounded" data-dismiss="modal">Close</button>
+        <input type="submit" value="Post the Message" class="btn btn-defeault btn-send rounded">
       </div>
       </form>
      </div>
@@ -76,30 +76,33 @@
     <div class="main-content paddsection">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-12 col-md-offset-2">
             <div class="row">
               <div class="container-main single-main">
                 <div class="col-md-12">
                   <div class="block-main mb-30">
-                    <img src="{% static 'assets/img/home-bg.jpg' %} " class="img-responsive img-fluid" alt="reviews2">
-                    <div class="content-main single-post padDiv">
-                      <div class="journal-txt">
-                        <h4><a href="#">Birthday Wishes</a></h4>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                        Wish the Birthday Boy
-                      </button>
-                      </div>
-                      {% for item in wishes %}
-                     <blockquote >{{item.content}}
-                       <br><br>
-                       <strong class="pt-2" style="font-weight: 700;"> - {{item.name}}</strong>
-                     </blockquote>
-                     {% endfor %}
+                    <div class="row justify-content-center">
+                      <img src="{% static 'assets/img/mohandas-pai.jpg.webp' %} " class="img-responsive img-fluid" alt="reviews2">
                     </div>
+                    <div class="content-main single-post padDiv my-5 glass">
+                      <div class="journal-txt">
+                        <h4>Hostel experiences</h4>
+                        <button type="button" class="btn btn-primary rounded" data-toggle="modal" data-target="#staticBackdrop">
+                        Post your Experience here
+                        </button>
+                      </div>
+                    </div>
+                    {% for item in wishes %}
+                    <div class="container blockquote glass justify-content-center" >
+                      <p>{{item.content}}</p>
+                      <br><br>
+                      <strong class="pt-2" style="font-weight: 700;">{{item.name}}</strong>
+                    </div>
+                    {% endfor %}
                   </div>
                 </div>
 
-                </div>
+              </div>
               </div>
             </div>
           </div>
