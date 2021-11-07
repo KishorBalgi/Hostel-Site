@@ -8,7 +8,7 @@ def wishes(request):
         form = WishesForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect('home')
+        return redirect('wishes')
     else:
         form = WishesForm()
     
