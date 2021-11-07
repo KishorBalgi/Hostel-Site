@@ -61,18 +61,18 @@ a:focus {
   text-decoration: underline;
 }
 
-nav ul li a {
+/* nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
   display: block;
-  font-size: 12px;
+  font-size: 20px;
   color: #1e1e42;
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: 14px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out 0s;
-}
+} */
 
 p {
   margin: 25px 0;
@@ -201,8 +201,8 @@ nav {
   display: none;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -217,7 +217,7 @@ nav ul li {
   float: left;
   margin-right: 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   margin-left: 40px;
 }
 
@@ -225,7 +225,7 @@ nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   color: #ffff;
   font-family: "Poppins", helvetica;
   font-weight: 500;
@@ -1077,6 +1077,9 @@ nav ul li a {
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .smoothScroll {
+    font-size: 20px;
   }
   .responsive {
     float: right;
