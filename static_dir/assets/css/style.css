@@ -12,7 +12,8 @@
 body {
   background: #1e1e42;
   color: #d8ebe4;
-  font-family: "Poppins", helvetica;
+  /* font-family: "Poppins", helvetica; */
+  font-family: "Lobster Two", cursive;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -709,7 +710,7 @@ nav ul li a:hover {
   font-size: 35px;
   margin: 10px 0;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 
 .journal-block .journal-info .journal-txt p {
@@ -834,9 +835,13 @@ nav ul li a:hover {
 /* main content */
 
 .main-content {
-  background: url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background: url("../img/112.png");
+  /* background: url("../img/114.png"); */
+  /* background: url("../img/104.jpg"); */
+
   background-size: cover;
   background-attachment: fixed;
+  backdrop-filter: blur(10px);
 }
 
 .main-content .container-main {
@@ -959,8 +964,8 @@ nav ul li a:hover {
 .glass {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.3);
-  /* -webkit-backdrop-filter: blur(10px); */
-  /* backdrop-filter: blur(10px); */
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 .blockquote {
   width: 95%;
@@ -976,7 +981,8 @@ nav ul li a:hover {
 }
 .blockquote p {
   font-size: 22px;
-  color: #f2f2f2;
+  font-weight: bold;
+  color: #000;
   line-height: 35px;
 }
 .blockquote strong {
