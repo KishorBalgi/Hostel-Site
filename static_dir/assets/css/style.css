@@ -197,12 +197,11 @@ nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  padding: 8px;
   display: none;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -231,10 +230,9 @@ nav ul li a {
   font-family: "Poppins", helvetica;
   font-weight: 500;
   line-height: 16px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.424);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.02em;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }
 nav ul li a:hover {
   text-shadow: none;
@@ -387,6 +385,7 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover;
+  /* background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover; */
   padding-top: 120px;
 }
 
@@ -1429,7 +1428,8 @@ nav ul li a:hover {
 /* Gallery */
 #gallery {
   /* background: url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"); */
-  background: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/World_Konkani_Centre.jpg");
+  background: url("../img/104_blur.jpg");
+  /* background: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/World_Konkani_Centre.jpg"); */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

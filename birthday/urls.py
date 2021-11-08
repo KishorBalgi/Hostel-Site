@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.urls import path
-from wishes.views import wishes
-from .views import homepage, gallery
+from wishes.views import memories
+from .views import homepage, moments
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wishes/', wishes, name='wishes'),
-    path('gallery/', gallery, name='gallery'),
+    path('memories/', memories, name='memories'),
+    path('moments/', moments, name='moments'),
     path('', homepage, name='home'),
 ]
