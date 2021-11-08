@@ -12,7 +12,7 @@
 body {
   background: #1e1e42;
   color: #d8ebe4;
-  font-family: "Poppins", helvetica;
+  font-family: 'Dongle', sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -261,21 +261,25 @@ nav ul li a:hover {
 --------------------------------------------------------------*/
 
 #hero {
-  background: url("../img/image.jpg") repeat scroll center center/cover;
+  /*background: url("../img/image.jpg") repeat scroll center center/cover;*/
   height: 100vh;
   width: 100%;
 }
 
 #hero .hero-content {
+  background: #1e1e42;
   height: 100vh;
   text-align: left;
   width: 100%;
   display: flex;
+  font-size: 50px;
   justify-content: center;
   flex-direction: column;
 }
 
 .tvm {
+  height: 480px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,14 +294,14 @@ nav ul li a:hover {
 .hero-content h1 {
   font-size: 40px;
   font-weight: 700;
-  margin: -25% 5% 5% 5%;
+  margin: -30% 5% 5% 5%;
   text-transform: uppercase;
   color: #fff;
 }
 
 .hero-content p {
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin: -4% 5% 5% 5%;
   text-transform: capitalize;
   color: #fff;
