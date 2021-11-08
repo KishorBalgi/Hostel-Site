@@ -12,7 +12,7 @@
 body {
   background: #1e1e42;
   color: #d8ebe4;
-  font-family: "Poppins", helvetica;
+  font-family: 'Dongle', sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -61,18 +61,18 @@ a:focus {
   text-decoration: underline;
 }
 
-nav ul li a {
+/* nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
   display: block;
-  font-size: 12px;
+  font-size: 20px;
   color: #1e1e42;
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: 14px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out 0s;
-}
+} */
 
 p {
   margin: 25px 0;
@@ -217,7 +217,7 @@ nav ul li {
   float: left;
   margin-right: 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   margin-left: 40px;
 }
 
@@ -225,16 +225,20 @@ nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
   display: block;
-  font-size: 14px;
-  color: #ffff;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #fff;
   font-family: "Poppins", helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.424);
   letter-spacing: 0.02em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
-
+nav ul li a:hover {
+  text-shadow: none;
+}
 .logo {
   float: left;
 }
@@ -257,21 +261,25 @@ nav ul li a {
 --------------------------------------------------------------*/
 
 #hero {
-  background: url("../img/image.jpg") repeat scroll center center/cover;
+  /*background: url("../img/image.jpg") repeat scroll center center/cover;*/
   height: 100vh;
   width: 100%;
 }
 
 #hero .hero-content {
+  background: #1e1e42;
   height: 100vh;
   text-align: left;
   width: 100%;
   display: flex;
+  font-size: 50px;
   justify-content: center;
   flex-direction: column;
 }
 
 .tvm {
+  height: 480px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,14 +294,14 @@ nav ul li a {
 .hero-content h1 {
   font-size: 40px;
   font-weight: 700;
-  margin: -25% 5% 5% 5%;
+  margin: -30% 5% 5% 5%;
   text-transform: uppercase;
   color: #fff;
 }
 
 .hero-content p {
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin: -4% 5% 5% 5%;
   text-transform: capitalize;
   color: #fff;
@@ -955,8 +963,8 @@ nav ul li a {
 .glass {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  /* -webkit-backdrop-filter: blur(10px); */
+  /* backdrop-filter: blur(10px); */
 }
 .blockquote {
   width: 95%;
@@ -1077,6 +1085,9 @@ nav ul li a {
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .smoothScroll {
+    font-size: 20px;
   }
   .responsive {
     float: right;
