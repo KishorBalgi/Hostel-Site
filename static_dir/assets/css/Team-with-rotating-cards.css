@@ -1,4 +1,4 @@
-.card-section-imagia {
+/* .card-section-imagia {
   padding: 60px 0 30px;
   background: #f1f1f1;
 }
@@ -157,7 +157,7 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .back-imagia {
     visibility: hidden;
-    /*-ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);*/
+    -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
   }
 }
 
@@ -166,4 +166,4 @@
     z-index: 4;
   }
 }
-
+ */
