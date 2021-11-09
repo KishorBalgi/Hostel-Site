@@ -258,16 +258,17 @@ nav ul li a:hover {
 # Hero
 --------------------------------------------------------------*/
 
-#hero {
-  /*background: url("../img/image.jpg") repeat scroll center center/cover;*/
-  height: 100vh;
-  width: 100%;
-}
+
 
 #hero .hero-content {
+<<<<<<< HEAD
   /* background: #1e1e42; */
   background: #fff;
   height: 100vh;
+=======
+  background: #1e1e42;
+  height: 400px;
+>>>>>>> 39284bdf94ade5f4a833229a189c9414891b896b
   text-align: left;
   width: 100%;
   display: flex;
@@ -277,7 +278,7 @@ nav ul li a:hover {
 }
 
 .tvm {
-  height: 480px;
+  height: 820px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -293,7 +294,7 @@ nav ul li a:hover {
 .hero-content h1 {
   font-size: 40px;
   font-weight: 700;
-  margin: -30% 5% 5% 5%;
+  margin: 0% 5% 5% 5%;
   text-transform: uppercase;
   color: #e41749;
 }
@@ -301,7 +302,7 @@ nav ul li a:hover {
 .hero-content p {
   font-size: 13px;
   letter-spacing: 1px;
-  margin: -4% 5% 5% 5%;
+  margin: -3% 5% 3% 5%;
   text-transform: capitalize;
   color: #000;
   font-weight: 500;
@@ -401,6 +402,17 @@ nav ul li a:hover {
   color: white;
   text-shadow: 2px 2px black;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .hero-content p{
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
 }
 
 #about .div-img-bg .about-img img {
