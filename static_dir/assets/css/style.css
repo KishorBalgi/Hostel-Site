@@ -265,7 +265,8 @@ nav ul li a:hover {
 }
 
 #hero .hero-content {
-  background: #1e1e42;
+  /* background: #1e1e42; */
+  background: #fff;
   height: 100vh;
   text-align: left;
   width: 100%;
@@ -294,7 +295,7 @@ nav ul li a:hover {
   font-weight: 700;
   margin: -30% 5% 5% 5%;
   text-transform: uppercase;
-  color: #fff;
+  color: #e41749;
 }
 
 .hero-content p {
@@ -302,7 +303,7 @@ nav ul li a:hover {
   letter-spacing: 1px;
   margin: -4% 5% 5% 5%;
   text-transform: capitalize;
-  color: #fff;
+  color: #000;
   font-weight: 500;
 }
 
@@ -384,9 +385,10 @@ nav ul li a:hover {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover;
+  /* background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover; */
   /* background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover; */
   padding-top: 120px;
+  background: #f5f5f5;
 }
 
 #about .div-img-bg {
@@ -1006,7 +1008,8 @@ nav ul li a:hover {
 }
 /*-------------------------------------------------------------- # Footer --------------------------------------------------------------*/
 #footer {
-  background: #1e1e42;
+  /* background: #1e1e42; */
+  background: #e41749;
   padding-top: 50px;
   padding-bottom: 50px;
   display: -ms-flexbox;
@@ -1471,4 +1474,55 @@ nav ul li a:hover {
 
 ::-webkit-scrollbar {
   width: 10px;
+}
+/* Footer */
+footer {
+  background-color: #e41749;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.copyright {
+  display: inline-block;
+}
+.footer p {
+  color: #afafaf;
+}
+.social-links ul {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 0 0;
+}
+.social-links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  transition: all 0.5s ease-in;
+}
+.social-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  align-self: center;
+  padding-left: 8px;
+}
+.social-links ul li:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 780px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-container img {
+    width: 100px;
+  }
+  .social-links ul {
+    padding: 0;
+  }
 }
