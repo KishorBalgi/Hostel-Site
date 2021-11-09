@@ -199,7 +199,7 @@ nav {
   z-index: 1000;
   width: 100%;
   display: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -296,7 +296,7 @@ nav ul li a:hover {
 .hero-content p {
   font-size: 19px;
   letter-spacing: 2px;
-  line-height: 30px;
+  line-height: 35px;
   margin: -3% 5% 3% 5%;
   text-transform: capitalize;
   color: #000;
@@ -382,8 +382,6 @@ nav ul li a:hover {
 #about {
   width: 100%;
   height: auto;
-  /* background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover; */
-  /* background: url("../img/image\ \(1\).jpg") repeat scroll center center/cover; */
   padding-top: 120px;
   background: #f5f5f5;
 }
@@ -848,11 +846,9 @@ nav ul li a:hover {
 
 .main-content {
   background: url("../img/112.png");
-  /* background: url("../img/114.png"); */
-  /* background: url("../img/104.jpg"); */
-
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   backdrop-filter: blur(10px);
 }
 
@@ -975,8 +971,7 @@ nav ul li a:hover {
 /* Glassmorphism */
 .glass {
   /* background: rgba(255, 255, 255, 0.1); */
-  background: rgba(0, 0, 0, 0.4);
-
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -998,10 +993,26 @@ nav ul li a:hover {
   font-weight: bold;
   color: #fff;
   line-height: 35px;
+  text-align: justify;
 }
 .blockquote strong {
   align-self: flex-end;
   color: #f2f2f2;
+}
+@media only screen and (max-width: 520px) {
+  .blockquote {
+    padding: 20px;
+  }
+  .gallery {
+    margin-top: 70px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 17px;
+    line-height: 35px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .main-content {
@@ -1014,6 +1025,9 @@ nav ul li a:hover {
   }
   .container-main .block-main .content-main {
     width: 90vw;
+  }
+  .glass {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
   }
 }
 /*-------------------------------------------------------------- # Footer --------------------------------------------------------------*/
@@ -1440,9 +1454,7 @@ nav ul li a:hover {
 }
 /* Gallery */
 #gallery {
-  /* background: url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"); */
   background: url("../img/104_blur.jpg");
-  /* background: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/World_Konkani_Centre.jpg"); */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -1500,8 +1512,10 @@ footer {
 .copyright {
   display: inline-block;
 }
-.footer p {
-  color: #afafaf;
+.footer-title p {
+  color: #363636;
+  text-align: center;
+  font-weight: 200;
 }
 .social-links ul {
   display: flex;
