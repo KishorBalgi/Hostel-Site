@@ -172,3 +172,8 @@
     items: 1,
   });
 })(jQuery);
+
+$('.carousel').carousel({
+  interval: 2500,
+  pause: "false"
+});
