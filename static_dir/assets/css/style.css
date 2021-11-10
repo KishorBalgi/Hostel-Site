@@ -198,6 +198,7 @@ nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
+  height: 80px;
   display: none;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -222,7 +223,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 2px 0 0 0;
+  padding: 15px 0 0 0;
   position: relative;
   display: block;
   font-size: 17px;
@@ -245,7 +246,7 @@ nav ul li a:hover {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
 }
 
 .responsive {
@@ -274,7 +275,7 @@ nav ul li a:hover {
 }
 
 .tvm {
-  height: 500px;
+  height: 480px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -292,10 +293,8 @@ nav ul li a:hover {
 
 .hero-content p {
   font-size: 19px;
-  letter-spacing: 1px;
   line-height: 35px;
   margin: -3% 5% 3% 5%;
-  text-transform: capitalize;
   color: #000;
   font-weight: 500;
   text-align: justify;
@@ -493,7 +492,9 @@ nav ul li a:hover {
 .owl-nav {
   display: none;
 }
-
+.slide {
+  margin-top: 50px;
+}
 .img-slider {
   position: relative;
   width: 100vw;
@@ -1078,6 +1079,20 @@ nav ul li a:hover {
     font-size: 17px;
     line-height: 35px;
   }
+  .blockquote p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .blockquote strong {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .journal-txt h4 {
+    font-size: 20px;
+  }
+  .slide {
+    margin-top: 25%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1381,9 +1396,22 @@ nav ul li a:hover {
  */
 
 @media (max-width: 480px) {
+  .tvm {
+    height: 250px;
+  }
+  .hero-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .hero-content h1 {
+    font-size: 20px;
+  }
   /* Navbar */
   nav {
     padding: 20px 15px;
+  }
+  .logo img {
+    height: 50px;
   }
   .nav-menu {
     margin-top: 40px;
@@ -1444,83 +1472,82 @@ nav ul li a:hover {
     float: none;
     display: inline-block;
   }
-}
 
-/** Width between 320px to 0
+  /** Width between 320px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-@media (max-width: 320px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-  #about .div-img-bg {
-    padding: 0;
-  }
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-  }
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-  /* Single page */
-  .entry-comments-body span {
-    display: inline-block;
-    margin-right: 0;
+  @media (max-width: 320px) {
+    /* Navbar */
+    nav {
+      padding: 20px 15px;
+    }
+    .nav-menu {
+      margin-top: 40px;
+      display: none;
+      float: none;
+      width: 100%;
+    }
+    .nav-menu li {
+      float: none;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #f7f7f7;
+      line-height: 45px;
+      margin-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .responsive {
+      float: right;
+      padding-top: 15px;
+      display: block;
+    }
+    /* About */
+    .head-info .header-content h1 {
+      font-size: 32px;
+    }
+    #about .div-img-bg {
+      padding: 0;
+    }
+    #about .div-img-bg .about-img img {
+      margin-top: 0%;
+      margin-left: calc(0% - 0px);
+    }
+    #about .about-descr .p-heading {
+      font-size: 20px;
+    }
+    #about .about-descr .separator {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+    /* portfolio */
+    #portfolio .portfolio-list .nav li {
+      float: none;
+      margin: 20px;
+    }
+    /* journal */
+    #journal .journal-block .journal-info {
+      margin-bottom: 30px;
+    }
+    /* Contact */
+    .contact-contact {
+      margin-bottom: 30px;
+    }
+    /* Footer */
+    #footer .socials-media ul li {
+      margin-right: 0;
+      margin-left: 0;
+      float: none;
+      display: inline-block;
+    }
+    /* Single page */
+    .entry-comments-body span {
+      display: inline-block;
+      margin-right: 0;
+    }
   }
 }
-
 /* Gallery */
 
 #gallery {
@@ -1644,9 +1671,10 @@ footer {
 }
 
 .blog-pagination li {
-  border: 1px solid #edeff1;
+  border: 2px solid white;
   margin: 0 5px;
   transition: 0.3s;
+  border-radius: 1.5rem;
 }
 
 .blog-pagination li.active {
@@ -1654,7 +1682,7 @@ footer {
 }
 
 .blog-pagination li a {
-  color: #aaaaaa;
+  color: white;
   padding: 7px 16px;
   display: inline-block;
 }
@@ -1662,7 +1690,7 @@ footer {
 .blog-pagination li.active,
 .blog-pagination li:hover {
   background: #d9232d;
-  border: 1px solid #d9232d;
+  border: 2px solid #d9232d;
 }
 
 .blog-pagination li.active a,
