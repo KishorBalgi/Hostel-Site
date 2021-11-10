@@ -93,7 +93,7 @@
                         </button>
                       </div>
                     </div>
-                    {% for item in wishes %}
+                    {% for item in queryset %}
                     <div class="container blockquote glass justify-content-center" >
                       <p>{{item.content}}</p>
                       <br><br>
@@ -101,7 +101,38 @@
                       <strong class="pt-1" style="font-weight: 400; font-size: 15px;">{{item.batch}}</strong>
                     </div>
                     {% endfor %}
+
+
+
+
                   </div>
+
+
+                        <div class="blog-pagination">
+                            <ul class="justify-content-center">
+                                {% if queryset.has_previous %}
+                                    <li><a href="?page=1">First</a></li>
+                                    <li>
+                                        <a href="?{{ page_request_var }}={{ queryset.previous_page_number }}">Previous</a>
+                                    </li>
+                                {% endif %}
+
+                                {% for num in queryset.paginator.page_range %}
+                                    {% if queryset.number == num %}
+                                        <li class="active"><a href="?page={{ num }}">{{ num }}</a></li>
+                                    {% elif num > queryset.number|add:'-3' and num < queryset.number|add:'3' %}
+                                        <li><a href="?page={{ num }}">{{ num }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if queryset.has_next %}
+                                    <li><a href="?page={{ queryset.next_page_number }}">Next</a></li>
+                                    <li><a href="?page={{ queryset.paginator.num_pages }}">Last</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+
+
                 </div>
 
               </div>
@@ -110,6 +141,7 @@
           </div>
         </div>
       </div>
+
     </div><!-- End Blog Single -->
 
   </main><!-- End #main -->
