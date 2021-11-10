@@ -47,7 +47,7 @@ h3 {
 }
 
 a {
-  color: #1e1e42;
+  color: #ffffff;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -1513,7 +1513,7 @@ footer {
   display: inline-block;
 }
 .footer-title p {
-  color: #363636;
+  color: #ffffff;
   text-align: center;
   font-weight: 200;
 }
