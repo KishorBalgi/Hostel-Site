@@ -3,6 +3,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .forms import WishesForm
 from .models import Wishes
 
+
 def memories(request):
     wishes = Wishes.objects.all().order_by('-timestamp')
 
@@ -23,7 +24,7 @@ def memories(request):
         return redirect('memories')
     else:
         form = WishesForm()
-    
+
     context = {
         'form': form,
         'queryset': paginated_queryset,
